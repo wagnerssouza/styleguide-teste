@@ -8,4 +8,4 @@ Running local
 `http://localhost:8080`
 
 Build to production  
-`prod: npm run build`
+`npm run build`
