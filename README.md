@@ -7,5 +7,5 @@ Running local
 `npm run start:dev`  
 `http://localhost:8080`
 
-Build to production  
+Build production  
 `npm run build`
