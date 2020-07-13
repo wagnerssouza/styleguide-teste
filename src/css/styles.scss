@@ -1,0 +1,19 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./fonts.scss";
+
+.icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+.icon-upload {
+  background-image: url(../assets/icons/upload.svg);
+}
+
+.icon-recycle {
+  background-image: url(../assets/icons/recycle.svg);
+}
