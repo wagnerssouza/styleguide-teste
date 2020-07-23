@@ -3,6 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackPartialsPlugin = require("html-webpack-partials-plugin");
 
 module.exports = {
   entry: "./src/js/index.js",
@@ -16,6 +17,14 @@ module.exports = {
       filename: "index.html",
       template: "./src/index.html",
     }),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, "./src/partials/partial.html"),
+      },
+      {
+        path: path.join(__dirname, "./src/partials/partial-2.html"),
+      },
+    ]),
     new MiniCssExtractPlugin({
       filename: "styleguide.css",
       chunkFilename: "[id].css",
