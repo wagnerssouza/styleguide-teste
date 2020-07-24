@@ -19,10 +19,7 @@ module.exports = {
     }),
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, "./src/partials/partial.html"),
-      },
-      {
-        path: path.join(__dirname, "./src/partials/partial-2.html"),
+        path: path.join(__dirname, "./src/partials/blank.html"),
       },
     ]),
     new MiniCssExtractPlugin({
